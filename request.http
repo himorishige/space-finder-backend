@@ -1,7 +1,7 @@
 @endpoint = https://jpyq00mwve.execute-api.ap-northeast-1.amazonaws.com/prod/
-
+@token = 
 GET {{endpoint}}/hello/
-
+Authorization: {{token}}
 ###
 
 GET {{endpoint}}/spaces?spaceId=85a38cbd-4ffd-41c5-af4e-0ae797ed80bb
@@ -24,5 +24,6 @@ Content-Type: application/json
 
 {
   "location": "London",
-  "name": "Best location"
+  "name": "Best location",
 }
+###
