@@ -5,6 +5,18 @@ GET {{endpoint}}/hello/
 ###
 
 GET {{endpoint}}/spaces?spaceId=85a38cbd-4ffd-41c5-af4e-0ae797ed80bb
+###
+PUT {{endpoint}}/spaces?spaceId=85a38cbd-4ffd-41c5-af4e-0ae797ed80bb
+Content-Type: application/json
+
+{
+  "location": "Updated London",
+}
+###
+
+GET {{endpoint}}/spaces?location=London
+
+###
 
 ###
 POST {{endpoint}}/spaces/
